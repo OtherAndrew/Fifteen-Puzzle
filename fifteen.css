@@ -1,0 +1,39 @@
+/*
+Andrew Nguyen ##1620988
+CSE 154 AD with Garrett Jaeger
+Homework 4: Fifteen Puzzle
+    
+This file contains the styling for a
+site that hosts a Fifteen-tile sliding puzzle.
+*/
+body, button {
+    font-family: cursive;
+    font-size: 14pt;
+    text-align: center;
+}
+#puzzlearea {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+}
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: solid 5px;
+    font-size: 40pt;
+    background-image: url("background.jpg");
+    background-size: 400px;
+}
+.tile.black {
+    color: black;
+    cursor: default;
+}
+.tile.red {
+    color: red;
+    cursor: pointer;
+}
